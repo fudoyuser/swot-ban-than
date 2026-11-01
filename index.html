@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SWOT Bản Thân</title>
+  <meta name="description" content="Phân tích SWOT cá nhân: điểm mạnh, điểm yếu, cơ hội, thách thức và kế hoạch hành động." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top">SWOT<span>.</span></a>
+    <nav>
+      <a href="#swot">Ma trận</a>
+      <a href="#strategy">Chiến lược</a>
+      <a href="#plan">Kế hoạch</a>
+    </nav>
+    <button id="themeToggle" class="theme-toggle" aria-label="Đổi giao diện sáng/tối">◐</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="avatar" id="avatar"></div>
+      <div>
+        <p class="eyebrow">Phân tích SWOT cá nhân</p>
+        <h1 id="name"></h1>
+        <p class="role" id="role"></p>
+        <p class="intro" id="intro"></p>
+        <div class="goal"><strong>Mục tiêu:</strong> <span id="goal"></span></div>
+        <div class="links" id="links"></div>
+      </div>
+    </section>
+
+    <section id="swot" class="section">
+      <h2>Ma trận SWOT</h2>
+      <p class="sub">Nhấn vào từng mục để xem chi tiết.</p>
+      <div class="axis-labels">
+        <span>Yếu tố bên trong</span>
+      </div>
+      <div class="grid">
+        <article class="quad s" data-key="strengths">
+          <header><b>S</b><div><h3>Điểm mạnh</h3><small>Strengths</small></div></header>
+          <ul></ul>
+        </article>
+        <article class="quad w" data-key="weaknesses">
+          <header><b>W</b><div><h3>Điểm yếu</h3><small>Weaknesses</small></div></header>
+          <ul></ul>
+        </article>
+        <article class="quad o" data-key="opportunities">
+          <header><b>O</b><div><h3>Cơ hội</h3><small>Opportunities</small></div></header>
+          <ul></ul>
+        </article>
+        <article class="quad t" data-key="threats">
+          <header><b>T</b><div><h3>Thách thức</h3><small>Threats</small></div></header>
+          <ul></ul>
+        </article>
+      </div>
+      <div class="axis-labels bottom"><span>Yếu tố bên ngoài</span></div>
+    </section>
+
+    <section id="strategy" class="section">
+      <h2>Chiến lược kết hợp (TOWS)</h2>
+      <p class="sub">Biến phân tích thành hành động cụ thể.</p>
+      <div class="tows">
+        <div class="tow"><span class="tag so">S + O</span><h4>Tấn công</h4><p id="SO"></p></div>
+        <div class="tow"><span class="tag wo">W + O</span><h4>Cải thiện</h4><p id="WO"></p></div>
+        <div class="tow"><span class="tag st">S + T</span><h4>Phòng thủ</h4><p id="ST"></p></div>
+        <div class="tow"><span class="tag wt">W + T</span><h4>Né tránh</h4><p id="WT"></p></div>
+      </div>
+    </section>
+
+    <section id="plan" class="section">
+      <h2>Kế hoạch hành động</h2>
+      <p class="sub" id="progressText"></p>
+      <div class="progress"><div id="progressBar"></div></div>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> <span id="footerName"></span> · Xây dựng bằng HTML/CSS/JS · Lưu trữ trên GitHub Pages</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
