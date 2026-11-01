@@ -3,21 +3,6 @@
 //  (không cần đụng tới index.html / style.css / script.js)
 // ============================================================
 
-const PROFILE = {
-  name: "Nguyễn Văn A", // ← đổi thành tên của bạn
-  role: "Chủ nhiệm CLB · Ứng viên chương trình Management Trainee",
-  intro:
-    "Bản phân tích SWOT trung thực về chính mình: mình mạnh ở đâu, yếu ở đâu, " +
-    "đang có gì trong tay và cần vượt qua điều gì để chuẩn bị cho mùa tuyển Management Trainee.",
-  goal: "Vượt qua vòng tuyển chọn của ít nhất một chương trình Management Trainee trong mùa tuyển sắp tới.",
-  avatar: "", // để trống sẽ hiện chữ cái đầu; hoặc điền đường dẫn ảnh, vd: "avatar.jpg"
-  links: [
-    { label: "Email", url: "mailto:email@example.com" },
-    { label: "LinkedIn", url: "https://www.linkedin.com/" },
-    { label: "GitHub", url: "https://github.com/" },
-  ],
-};
-
 const SWOT = {
   strengths: [
     { title: "Chịu được sự cô đơn", detail: "Có thể làm việc và tự xoay xở một mình mà không bị ảnh hưởng tinh thần, không phụ thuộc vào người khác." },

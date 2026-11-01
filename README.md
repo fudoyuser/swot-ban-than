@@ -3,7 +3,7 @@
 Website tĩnh giới thiệu phân tích SWOT cá nhân. Chạy được ngay trên **GitHub Pages**.
 
 ## Chỉnh nội dung
-Chỉ cần sửa file `data.js`: thông tin cá nhân (`PROFILE`), 4 ô SWOT (`SWOT`),
+Chỉ cần sửa file `data.js`: 4 ô SWOT (`SWOT`),
 chiến lược TOWS (`STRATEGIES`) và kế hoạch hành động (`PLAN`, trạng thái `done` / `doing` / `todo`).
 
 ## Đăng lên GitHub Pages

@@ -80,6 +80,7 @@ h1 { margin: 4px 0; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.15; }
 }
 
 .section { padding: 48px 0 8px; }
+main > .section:first-child { padding-top: 40px; }
 h2 { margin: 0; font-size: 1.75rem; }
 .sub { margin: 4px 0 20px; color: var(--muted); }
 

@@ -2,18 +2,7 @@
   const $ = (id) => document.getElementById(id);
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
-  // Hồ sơ
-  $("name").textContent = PROFILE.name;
-  $("footerName").textContent = PROFILE.name;
-  $("role").textContent = PROFILE.role;
-  $("intro").textContent = PROFILE.intro;
-  $("goal").textContent = PROFILE.goal;
   $("year").textContent = new Date().getFullYear();
-  const av = $("avatar");
-  if (PROFILE.avatar) av.style.backgroundImage = `url("${PROFILE.avatar}")`;
-  else av.textContent = PROFILE.name.trim().split(/\s+/).pop().charAt(0).toUpperCase();
-  $("links").innerHTML = PROFILE.links
-    .map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join("");
 
   // Ma trận SWOT
   document.querySelectorAll(".quad").forEach((q) => {
