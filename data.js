@@ -4,12 +4,12 @@
 // ============================================================
 
 const PROFILE = {
-  name: "Nguyễn Văn A",
-  role: "Sinh viên năm 3 · Ngành Quản trị Kinh doanh",
+  name: "Nguyễn Văn A", // ← đổi thành tên của bạn
+  role: "Chủ nhiệm CLB · Ứng viên chương trình Management Trainee",
   intro:
-    "Đây là bản phân tích SWOT cá nhân giúp mình nhìn rõ năng lực hiện tại, " +
-    "những điểm cần cải thiện, cũng như cơ hội và thách thức trên con đường sự nghiệp.",
-  goal: "Trở thành Chuyên viên Phân tích Dữ liệu Kinh doanh trong vòng 2 năm tới.",
+    "Bản phân tích SWOT trung thực về chính mình: mình mạnh ở đâu, yếu ở đâu, " +
+    "đang có gì trong tay và cần vượt qua điều gì để chuẩn bị cho mùa tuyển Management Trainee.",
+  goal: "Vượt qua vòng tuyển chọn của ít nhất một chương trình Management Trainee trong mùa tuyển sắp tới.",
   avatar: "", // để trống sẽ hiện chữ cái đầu; hoặc điền đường dẫn ảnh, vd: "avatar.jpg"
   links: [
     { label: "Email", url: "mailto:email@example.com" },
@@ -20,44 +20,47 @@ const PROFILE = {
 
 const SWOT = {
   strengths: [
-    { title: "Tư duy logic & phân tích", detail: "Thích làm việc với số liệu, giải quyết vấn đề theo từng bước rõ ràng." },
-    { title: "Tiếng Anh tốt", detail: "IELTS 7.0, đọc hiểu tài liệu chuyên ngành và giao tiếp tự tin." },
-    { title: "Tinh thần tự học", detail: "Tự học Excel, SQL và Power BI qua các khóa học online." },
-    { title: "Làm việc nhóm", detail: "Từng làm trưởng nhóm trong nhiều dự án môn học và CLB." },
+    { title: "Chịu được sự cô đơn", detail: "Có thể làm việc và tự xoay xở một mình mà không bị ảnh hưởng tinh thần, không phụ thuộc vào người khác." },
+    { title: "Chịu được áp lực lớn", detail: "Giữ được bình tĩnh và vẫn hoạt động được khi khối lượng công việc dồn dập hoặc tình huống căng thẳng." },
+    { title: "Tính quyết đoán cao", detail: "Dám đưa ra quyết định nhanh và chịu trách nhiệm, không chần chừ khi cần chốt phương án." },
   ],
   weaknesses: [
-    { title: "Thiếu kinh nghiệm thực tế", detail: "Chưa có kỳ thực tập chính thức tại doanh nghiệp." },
-    { title: "Thuyết trình còn run", detail: "Chưa tự tin khi nói trước đám đông lớn." },
-    { title: "Quản lý thời gian", detail: "Đôi khi ôm đồm nhiều việc, dễ trễ deadline." },
-    { title: "Kỹ năng lập trình cơ bản", detail: "Python mới ở mức nhập môn." },
+    { title: "Phát âm chưa rõ ràng", detail: "Người nghe đôi khi khó nắm bắt khi mình nói, ảnh hưởng đến thuyết trình và phỏng vấn." },
+    { title: "Hay để nước đến chân mới nhảy", detail: "Khó kiên trì với công việc có thời hạn dài, thường sát deadline mới bắt tay vào làm." },
+    { title: "Khó tập trung vào việc dài hơi", detail: "Dễ mất tập trung khi một công việc kéo dài nhiều ngày hoặc nhiều tuần." },
+    { title: "Quyết định liều lĩnh, thiếu kiểm tra", detail: "Mặt trái của sự quyết đoán: đôi khi quyết vội, không rà soát kỹ nên dễ sai sót." },
+    { title: "Không duy trì được các mối quan hệ", detail: "Có cơ hội tiếp cận nhiều người nhưng chưa giữ liên lạc và vun đắp lâu dài." },
+    { title: "Né tránh việc khó, cần bị ép", detail: "Ít chủ động xử lý vấn đề hóc búa cần suy nghĩ nhiều; chỉ có động lực thay đổi khi bị ép." },
+    { title: "Đuối sức ở giai đoạn quan trọng", detail: "Hay bị hụt năng lượng đúng lúc công việc cần dồn sức nhất." },
+    { title: "Lúng túng khi duy trì câu chuyện", detail: "Khó giữ cho cuộc trò chuyện tiếp diễn tự nhiên với mọi người." },
+    { title: "Khó bắt chuyện với người lạ", detail: "Ngại mở lời trong môi trường mới hoặc khi gặp người chưa quen." },
+    { title: "Kém nhận biết điểm yếu của người khác", detail: "Chưa giỏi quan sát để hiểu và tận dụng điểm yếu của đối phương trong đàm phán, cạnh tranh." },
+    { title: "Dễ buồn ngủ, khó dậy sớm ở nhà", detail: "Nằm trên giường là dễ ngủ, buổi sáng ở nhà gần như không dậy nổi, nên mất nhiều thời gian hiệu quả." },
   ],
   opportunities: [
-    { title: "Nhu cầu nhân lực dữ liệu tăng", detail: "Doanh nghiệp ngày càng cần người hiểu cả kinh doanh lẫn dữ liệu." },
-    { title: "Chương trình thực tập", detail: "Trường có nhiều liên kết thực tập với doanh nghiệp lớn." },
-    { title: "Khóa học online miễn phí", detail: "Coursera, Google Career Certificates, Kaggle Learn…" },
-    { title: "Mạng lưới cựu sinh viên", detail: "Có thể kết nối mentor qua CLB và các sự kiện hướng nghiệp." },
+    { title: "Mạng lưới từ vai trò chủ nhiệm CLB", detail: "Vị trí chủ nhiệm CLB và các hoạt động khác mở ra nhiều mối quan hệ có thể phát triển: thành viên, cựu thành viên, đối tác, nhà tài trợ, giảng viên." },
   ],
   threats: [
-    { title: "Cạnh tranh cao", detail: "Nhiều ứng viên có nền tảng kỹ thuật mạnh hơn." },
-    { title: "AI thay đổi công việc", detail: "Các tác vụ phân tích cơ bản có thể bị tự động hóa." },
-    { title: "Yêu cầu kinh nghiệm", detail: "Nhiều vị trí đòi hỏi 1–2 năm kinh nghiệm." },
-    { title: "Áp lực tài chính", detail: "Cần cân bằng giữa việc làm thêm và học tập." },
+    { title: "Mùa thi Management Trainee đã cận kề", detail: "Các kỳ tuyển MT sắp diễn ra nhưng mình chưa ôn luyện gì cho các vòng test, case và phỏng vấn." },
+    { title: "Học toán kém", detail: "Các vòng test năng lực của MT thường có toán và tư duy số liệu (numerical reasoning), và đây đang là rào cản lớn." },
   ],
 };
 
 // Chiến lược kết hợp (Ma trận TOWS)
 const STRATEGIES = {
-  SO: "Dùng tiếng Anh và tư duy phân tích để ứng tuyển các chương trình thực tập Data/BI tại doanh nghiệp đa quốc gia.",
-  WO: "Tận dụng khóa học online miễn phí để nâng Python lên mức trung cấp; nhờ mentor cựu sinh viên góp ý CV.",
-  ST: "Xây dựng portfolio dự án thực tế (dashboard, phân tích case study) để nổi bật hơn ứng viên khác.",
-  WT: "Tham gia CLB tranh biện/thuyết trình và áp dụng phương pháp Pomodoro để giảm rủi ro mất cơ hội vì kỹ năng mềm.",
+  SO: "Dùng sự quyết đoán và khả năng chịu áp lực để chủ động dẫn dắt các hoạt động lớn của CLB, qua đó tạo câu chuyện lãnh đạo thật cho hồ sơ MT và kết nối với đối tác, nhà tài trợ.",
+  WO: "Tận dụng vai trò chủ nhiệm CLB làm “sân tập” giao tiếp: mỗi tuần chủ động nhắn hỏi thăm 2–3 người trong mạng lưới, luyện bắt chuyện, nói rõ ràng hơn khi điều phối họp.",
+  ST: "Biến khả năng chịu áp lực thành lợi thế: tự đặt deadline giả sớm hơn lịch thi MT và ôn trong các khung giờ dồn nén ngắn để vẫn kịp chuẩn bị dù thời gian gấp.",
+  WT: "Chia việc ôn toán/test MT thành các phiên ngắn 25–45 phút, học ở thư viện hoặc quán thay vì ở nhà để tránh buồn ngủ, rủ một bạn cùng ôn để có người “ép” giữ nhịp.",
 };
 
-// Kế hoạch hành động
+// Kế hoạch hành động (status: "done" | "doing" | "todo")
 const PLAN = [
-  { time: "Tháng 1–3", task: "Hoàn thành chứng chỉ Google Data Analytics", status: "doing" },
-  { time: "Tháng 2–4", task: "Làm 3 dự án portfolio trên Kaggle & đăng lên GitHub", status: "todo" },
-  { time: "Tháng 4", task: "Tham gia CLB thuyết trình, thuyết trình ít nhất 2 lần", status: "todo" },
-  { time: "Tháng 5–8", task: "Ứng tuyển & hoàn thành kỳ thực tập Data/BI", status: "todo" },
-  { time: "Hằng tuần", task: "Lập kế hoạch tuần, review mỗi Chủ nhật", status: "done" },
+  { time: "Ngay tuần này", task: "Lập danh sách các chương trình MT mục tiêu, ghi rõ deadline nộp hồ sơ & ngày thi", status: "todo" },
+  { time: "Mỗi ngày", task: "Luyện 30 phút toán tư duy / numerical reasoning (ra khỏi phòng ngủ để học)", status: "todo" },
+  { time: "Mỗi ngày", task: "Đặt báo thức để xa giường, dậy cố định một giờ kể cả khi ở nhà", status: "todo" },
+  { time: "Mỗi tuần", task: "Luyện phát âm: đọc to và ghi âm 10 phút, nghe lại để sửa", status: "todo" },
+  { time: "Mỗi tuần", task: "Chủ động liên lạc lại 2–3 người trong mạng lưới CLB", status: "todo" },
+  { time: "Trước mỗi quyết định lớn", task: "Dùng checklist 3 câu hỏi: rủi ro gì? đã kiểm tra chưa? ai cần hỏi ý kiến?", status: "todo" },
+  { time: "2 tuần trước thi", task: "Thi thử test MT có bấm giờ và luyện phỏng vấn với bạn bè", status: "todo" },
 ];
